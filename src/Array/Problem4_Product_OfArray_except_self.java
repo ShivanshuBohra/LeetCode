@@ -2,6 +2,8 @@ package Array;
 
 import java.util.Arrays;
 
+// Find product of whole array and then divide product  with current index
+//Handle Zeros when diving as divide by 0 will give arhtmentic exception
 public class Problem4_Product_OfArray_except_self {
 	
 	public static int[] productArraywithDivison(int[] nums) {
@@ -34,9 +36,14 @@ public class Problem4_Product_OfArray_except_self {
 	
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4};
+		int[]  arr2 = {-1 ,0,-3,4,-1};
+		int[]  arr3 = {0,0,1,5,-9};
 		
-	int[] output = productArraywithDivison(arr);
-	System.out.println(Arrays.toString(output));
+
+	System.out.println(Arrays.toString(productArraywithDivison(arr)));
+	System.out.println(Arrays.toString(productArraywithDivison(arr2)));
+	System.out.println(Arrays.toString(productArraywithDivison(arr3)));
+
 		
 	}
 
